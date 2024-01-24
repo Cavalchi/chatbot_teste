@@ -8,7 +8,7 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 
 chatbot = ChatBot('Meu ChatBot', storage_adapter='chatterbot.storage.SQLStorageAdapter')
 trainer = ChatterBotCorpusTrainer(chatbot)
-
+trainer.train("meu_corpus.yml")
 # Treinando o chatbot com o corpus em português
 trainer.train("chatterbot.corpus.portuguese")
 
